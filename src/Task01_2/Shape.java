@@ -1,7 +1,6 @@
 package Task01_2;
 
 public abstract class Shape {
-
     public String shapeName = "";
     public double area = 0;
 
@@ -17,8 +16,17 @@ public abstract class Shape {
     public void setName(String newName) {
         this.shapeName = newName;
     }
+    
+  
+    
 
     //please be noted that this is an abstract function
     public abstract void calculateArea();
 
 }
+
+
+
+    
+   
+    
