@@ -12,7 +12,6 @@ package Task02_1;
 public class DebugProgram {
 
     public static void main(String[] args) {
-        System.out.println("ddd");
         DebugProgram dp = new DebugProgram();
         dp.bugMethod();
     }
@@ -29,9 +28,12 @@ public class DebugProgram {
 
         Dogs[] dogArray = new Dogs[]{d1, d2, d3, d4, d5};
 
-        for (int i = 0; i <= dogArray.length; i++) {
+        for (int i = 0; i < dogArray.length; i++) {
             String dogName = dogArray[i].getName();
-            System.out.println(dogName.trim());
+            if(dogName != null){
+                System.out.println(dogName.trim());
+
+            }
         }
     }
 }
