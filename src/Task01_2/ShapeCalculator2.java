@@ -16,7 +16,7 @@ public class ShapeCalculator2 {
     public static void main(String[] args) {
         
          Scanner input = new Scanner(System.in);
-        System.out.println("xxxx");
+        System.out.println("Please select:\n(1)Rectangle\n(2)Circle\n(3)Square");
          int test = input.nextInt();
          
             switch (test) {

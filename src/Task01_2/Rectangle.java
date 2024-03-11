@@ -14,6 +14,7 @@ package Task01_2;
         
        public Rectangle(double le, double we) {
            super("Rectangle");
+
            this.length = le;
            this.width = we;
            calculateArea();
@@ -21,6 +22,9 @@ package Task01_2;
        
        @Override
        public void calculateArea(){
-           this.area = length * width;
+        if(length == width){
+            super.setName("Square");
+        }
+        this.area = length * width;
        }
     }
