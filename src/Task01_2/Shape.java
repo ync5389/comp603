@@ -10,7 +10,7 @@ public abstract class Shape {
 
     public void printInfo() {
         System.out.println(this.shapeName);
-        System.out.println(this.area);
+        System.out.format("%.2f", this.area);
     }
 
     public void setName(String newName) {

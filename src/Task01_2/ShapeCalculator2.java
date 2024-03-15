@@ -16,8 +16,14 @@ public class ShapeCalculator2 {
     public static void main(String[] args) {
         
          Scanner input = new Scanner(System.in);
-        System.out.println("Please select:\n(1)Rectangle\n(2)Circle\n(3)Square");
-         int test = input.nextInt();
+
+
+
+         while (true) {
+            System.out.println("\n\nPlease select:\n(1)Rectangle\n(2)Circle\n(3)Square");
+            if (input.hasNextInt()) {
+                int test = input.nextInt();
+           
          
             switch (test) {
             case 1:
@@ -34,11 +40,17 @@ public class ShapeCalculator2 {
                 break;
             case 3:
                 double s = input.nextDouble();
-                                Square sout = new Square(s);
+                Square sout = new Square(s);
                 sout.printInfo();
                 break;
                 
             }
+
+        } else {
+            System.out.println("Invalid input!");
+            break;
+        }
+    }
             
             input.close();
     }

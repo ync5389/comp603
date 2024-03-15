@@ -19,6 +19,6 @@ package Task01_2;
        
        @Override
        public void calculateArea(){
-           this.area =  Math.PI * Math.pow(radius, 2);
+        this.area = Math.PI * Math.pow(radius, 2);
        }
     }
